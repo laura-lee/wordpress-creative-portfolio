@@ -3,21 +3,27 @@
 	<?php get_header(); ?>
 	<section class="hero-section">
 		<div class="intro">
-			<h2>Dale Sturtevant</h2>
-			<p>I love cheese, especially caerphilly feta. Fromage when the cheese comes out everybody's 
-			happy port-salut stilton cheesecake cut the cheese who moved my cheese squirty cheese.
-			Hard cheese.</p>
+		<h2>
+			<?php 
+				get_currentuserinfo();
+
+				echo ($current_user->user_firstname . " " . $current_user->user_lastname);
+			?>
+		</h2>
+		<p>
+			<?php 
+				the_author_meta("description", $current_user->ID);
+			 ?>
+		</p>
 		</div>
 	</section>
 		<div class="main">
 		  <div class="container">
 
-		    <div class="content">
+		    <div class="content content-blog">
+				<?php  dynamic_sidebar( 'custom-widget-area' ); ?>
 		    		<?php get_template_part( 'loop', 'index' );	?>
 		    </div> <!--/.content -->
-
-		    <?php get_sidebar(); ?>
-
 		  </div> <!-- /.container -->
 		</div> <!-- /.main -->
 	<?php get_footer(); ?>

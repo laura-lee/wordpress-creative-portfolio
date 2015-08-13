@@ -163,6 +163,15 @@ function hackeryou_widgets_init() {
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
+
+	) );
+	register_sidebar( array(
+		'name' => 'Custom Widget Area',
+		'id' => 'custom-widget-area',
+		'description' => 'The custom widget area',
+		'before_widget' => '<h2 id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</h2>',
+		
 	) );
 
 }
