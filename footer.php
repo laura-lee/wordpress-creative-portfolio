@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <p class="footer-paragraph">&copy; Built by the strongest of the strong; Lee MacDonald &amp; Laura Anderson <?php echo date('Y'); ?></p>
   </div>
 </footer>
 
