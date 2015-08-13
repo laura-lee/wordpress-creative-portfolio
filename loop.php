@@ -13,27 +13,24 @@
 <?php endif; // end if there are no posts ?>
 
 <?php // if there are posts, Start the Loop. ?>
+	
+
+
 
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title">
-     
-      </h2>
-
+		<?php 
+			$featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+	 	?>
 			<section class="entry-content">
+				<div class="image-container" style="background-image:url(<?php echo $featuredImage ?>)"></div>
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
           'before' => '<div class="page-link"> Pages:',
           'after' => '</div>'
         )); ?>
 			</section><!-- .entry-content -->
-
-			<footer>
-				<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
-			</footer>
 
 		</article><!-- #post-## -->
 

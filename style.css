@@ -444,8 +444,7 @@ body {
 
 .content {
   float: left;
-  width: 65%;
-  margin-right: 5%; }
+  width: 65%;}
 
 .full {
   width: 100%; }
@@ -492,6 +491,80 @@ body {
 }
 .intro h2 {
   color: white;
+}
+.content-blog {
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h2.widgettitle {
+  text-align: center;
+  width: 100%;
+  margin: 6% 0;
+}
+article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+article:nth-child(2n+1) section.entry-content {
+  display: flex;
+}
+section.entry-content {
+  display: flex;
+}
+section.entry-content p {
+  width: 48%;
+  text-align: left;
+  padding: 8%;
+}
+a.more-link {
+  color: rgba(136, 206, 250, 0.9);
+}
+article:nth-child(2n+1) section.entry-content .image-container {
+  order: 1;
+}
+section.entry-content img {
+  margin: 0 auto;
+}
+.image-container {
+  width: 48%;
+  padding: 0 0 35% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Begin Portfolio Content Page Styles*/
+body.single-post {
+  background-image: linear-gradient(rgba(248, 248, 255, 0.2), rgba(248, 248, 255, 0.2)), url(images/shattered.png);
+}
+.portfolio-content-page {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+}
+.portfolio-content-page img {
+  width: 100%;
+  margin: 0 auto 2% auto;
+}
+.portfolio-content-page p {
+  width: 100%;
+}
+.portfolio-content-page a {
+  color: rgba(136, 206, 250, 0.9);
+}
+p.nav-previous {
+  display: inline;
+}
+p.nav-next {
+  text-align: right;
+  display: inline;
+}
+#nav-below {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Begin Footer Styles*/
