@@ -478,7 +478,7 @@ body {
 
 /*Begin Main Page Styles*/
 .hero-section {
-  background-image: linear-gradient(rgba(136, 206, 250, 0.3), rgba(136, 206, 250, 0.3)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(136, 206, 250, 0.3), rgba(136, 206, 250, 0.3)), url(images/hero.jpg);
   background-size: cover;
   width: 100%;
   background-position: center;
