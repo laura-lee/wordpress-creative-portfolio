@@ -111,6 +111,14 @@ function hackeryou_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
 
+$customHeader = array(
+	'default-image' => get_template_directory_uri() . '/images/hero.jpg',
+	'uploads' => true,
+	'flex-width'    => true,
+	'flex-height'    => true
+);
+add_theme_support( 'custom-header', $customHeader );
+
 
 /*
  * Sets the post excerpt length to 40 characters.
