@@ -181,6 +181,14 @@ function hackeryou_widgets_init() {
 		'after_widget' => '</h2>',
 		
 	) );
+	register_sidebar( array(
+		'name' => 'Third Widget Area',
+		'id' => 'third-widget-area',
+		'description' => 'The third widget area',
+		'before_widget' => '<div id="%1$s" class="form-container %2$s">',
+		'after_widget' => '</div>',
+		
+	) );
 
 }
 

@@ -423,7 +423,7 @@ Default Styling
 ====================================
 */
 .wrapper {
-  max-width: 1280px;
+  max-width: 1450px;
   margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -439,7 +439,7 @@ body {
   background-color: #f8f8ff; }
 
 .container {
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto; }
 
 .content {
@@ -451,6 +451,11 @@ body {
 
 /*Begin Nav Styles*/
 .nav {
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+  padding: 0 3%;
+  background: #f8f8ff;
   display: flex;
   justify-content: space-between;
 }
@@ -479,6 +484,7 @@ body {
 .hero-section {
   background-image: linear-gradient(rgba(136, 206, 250, 0.3), rgba(136, 206, 250, 0.3)), url(images/hero.jpg);
   background-size: cover;
+  max-width: 1450px;
   width: 100%;
   background-position: center;
   height: 65vh;
@@ -487,7 +493,6 @@ body {
   width: 50%;
   padding: 13% 10% 0 5%;
   color: white;
-  /*background-image: linear-gradient(rgba(136, 206, 250, 0.5), rgba(136, 206, 250, 0.5));*/
 }
 .intro h2 {
   color: white;
@@ -545,7 +550,7 @@ body.single-post {
   margin: 5% auto;
   background-color: #f8f8ff; 
   float:none;
-  padding: 1% 5% 1% 5%;
+  padding: 1% 5%;
 }
 .portfolio-content-page img {
   width: 100%;
@@ -569,10 +574,70 @@ p.nav-next {
   justify-content: space-between;
 }
 
+/*Begin About Page Styles*/
+.page-id-16 {
+  background-image: url(images/lodyas.png);
+}
+.about-page-wrapper {
+  background-image: url(images/lodyas.png);
+}
+.about-page {
+  width: 70%;
+  margin: 17% auto 16% auto;
+  padding: 3% 5% 6% 5%;
+  background: #f8f8ff;
+}
+.about-page img {
+  margin: 3% 0 5% 0;
+}
+
+/*Begin Contact Page Styles*/
+.page-id-9 {
+  background-image: url(images/xv.png);
+  /*background-image: url(images/type.jpg);*/
+}
+.contact-page {
+  width: 70%;
+  margin: 0 auto 0 auto;
+  padding: 10%;
+  /*background-color: rgba(248, 248, 255, 0.7);*/
+}
+.main li {
+  list-style-type: none;
+}
+.social-media-widgets {
+  /*margin: 10% 45%;*/
+}
+.form-container {
+  margin: 10% 0;
+}
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+input {
+  border: 1px solid rgba(43, 43, 43, 0.6);
+  padding: 1%;
+}
+textarea {
+  border: 1px solid rgba(43, 43, 43, 0.6);
+  padding: 1%;
+}
+input[type=submit] {
+  padding: 1% 4%;
+  /*border-radius: 50%;*/
+  border: none;
+  color: white;
+  background-color: rgba(136, 206, 250, 0.5);
+}
+
 /*Begin Footer Styles*/
 p.footer-paragraph {
   text-align: center;
   font-size: 13px;
+  background: #f8f8ff;
+  padding: 2%;
+  margin: 10% 0 0 0;
 }
 
 
