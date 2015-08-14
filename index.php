@@ -1,7 +1,7 @@
 <?php //index.php is the last resort template, if no other templates match ?>
 <div class="wrapper">
 	<?php get_header(); ?>
-	<section class="hero-section">
+	<section class="hero-section" style="background-image: url(<?php header_image(); ?>)">
 		<div class="intro">
 		<h2>
 			<?php 
