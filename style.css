@@ -542,8 +542,10 @@ body.single-post {
 }
 .portfolio-content-page {
   width: 70%;
-  margin: 0 auto;
-  float: none;
+  margin: 5% auto;
+  background-color: #f8f8ff; 
+  float:none;
+  padding: 1% 5% 1% 5%;
 }
 .portfolio-content-page img {
   width: 100%;
