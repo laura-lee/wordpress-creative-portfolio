@@ -1,3 +1,5 @@
+
+<div class="wrapper">
 <?php get_header(); ?>
 
 <div class="main">
@@ -38,3 +40,4 @@
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
+</div>

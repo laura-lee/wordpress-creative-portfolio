@@ -1,8 +1,9 @@
+
+<div class="wrapper">
+
 <?php
 
 get_header(); ?>
-
-<div class="wrapper">
 
   	<!-- Template Name: About Page.  -->
 
@@ -11,7 +12,7 @@ get_header(); ?>
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-        <h2><?php the_title(); ?></h2>
+        <h2 class="about-title"><?php the_title(); ?></h2>
         <?php 
           $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
         ?>
@@ -22,5 +23,5 @@ get_header(); ?>
     </div> <!-- /.container -->
 
   </div> <!-- /.main -->
-</div>
 <?php get_footer(); ?>
+</div>

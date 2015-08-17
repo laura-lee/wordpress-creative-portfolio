@@ -25,7 +25,7 @@
 	 	?>
 			<section class="entry-content">
 				<div class="image-container" style="background-image:url(<?php echo $featuredImage ?>)"></div>
-				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+				<?php the_content('Find out more <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
           'before' => '<div class="page-link"> Pages:',
           'after' => '</div>'
